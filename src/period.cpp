@@ -8,9 +8,10 @@ dtime::dtime(int dyear,int dmonth):mytime(dyear,dmonth){
 }
 
 void dtime::show(){
-    cout<<"year="<<year<<endl;
-    cout<<"month="<<month<<endl;
-    cout<<"total_month="<<total_time<<endl;
+    cout<<"已入职";
+    if(year!=0) cout<<year<<"年";
+    if(month!=0) cout<<month<<"月";
+    if(year!=0) cout<<",总计"<<total_time<<"月"<<endl<<endl;
     return;
 }
 
@@ -22,5 +23,4 @@ dtime operator-(const mytime& a,const mytime &b){
         months=months+12;
     }
     return dtime(years,months+1);
-    
 }
