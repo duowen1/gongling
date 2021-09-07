@@ -1,5 +1,5 @@
 /**@file  mytime.h
-* @brief       Ê±¼äÀà
+* @brief       æ—¶é—´ç±»
 * @author      Duowen
 * @date        2021-2-19
 * @version     V1.0
@@ -9,14 +9,14 @@
 #define __mytime__
 
 /**
- * @brief Ê±¼äÀà  
+ * @brief æ—¶é—´ç±»  
  *   
  * 
  */ 
 class mytime{
 public:
-    int year;/**< Äê·Ý*/ 
-    int month;/**< ÔÂ·Ý*/ 
+    int year;/**< å¹´ä»½*/ 
+    int month;/**< æœˆä»½*/ 
     mytime(int);
     mytime(int,int);
 };

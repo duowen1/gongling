@@ -1,5 +1,5 @@
 /**@file  mytime.cpp
-* @brief       Ê±¼äÀàµÄÊµÏÖ
+* @brief       æ—¶é—´ç±»çš„å®ç°
 * @author      Duowen
 * @date        2021-2-19
 * @version     V1.0
@@ -8,8 +8,8 @@
 #include "mytime.h"
 
 /**
- * @brief ¹¹Ôìº¯Êı
- * @param int times£ºÒÔyyyymmĞÎÊ½µÄÊ±¼ä±íÊ¾  
+ * @brief æ„é€ å‡½æ•°
+ * @param int timesï¼šä»¥yyyymmå½¢å¼çš„æ—¶é—´è¡¨ç¤º  
  */ 
 mytime::mytime(int times){
     year=times/100;
@@ -17,9 +17,9 @@ mytime::mytime(int times){
 }
 
 /**
- * @brief ¹¹Ôìº¯Êı
- * @param int years£ºÄê·İ
- * @param int months£ºÔÂ·İ  
+ * @brief æ„é€ å‡½æ•°
+ * @param int yearsï¼šå¹´ä»½
+ * @param int monthsï¼šæœˆä»½  
  */ 
 mytime::mytime(int years,int months){
     year=years;

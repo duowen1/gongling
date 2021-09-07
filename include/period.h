@@ -1,5 +1,5 @@
 /**@file  period.h
-* @brief       ÔÚÖ°Ê±¼äÀà
+* @brief       åœ¨èŒæ—¶é—´ç±»
 * @author      Duowen
 * @date        2021-2-19
 * @version     V1.0
@@ -11,12 +11,12 @@
 #include "mytime.h"
 
 /**
- * @brief ÔÚÖ°Ê±¼äÀà  
+ * @brief åœ¨èŒæ—¶é—´ç±»  
  * 
  * 
  */
 class dtime : public mytime{
-    int total_time;/**< ÔÚÖ°Ê±¼ä×ÜÔÂÊı */
+    int total_time;/**< åœ¨èŒæ—¶é—´æ€»æœˆæ•° */
 public:
     void show();
     dtime(int,int);

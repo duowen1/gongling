@@ -1,5 +1,5 @@
 /**@file  period.cpp
-* @brief       ÔÚÖ°Ê±¼äÀàµÄÊµÏÖ
+* @brief       åœ¨èŒæ—¶é—´ç±»çš„å®ç°
 * @author      Duowen
 * @date        2021-2-19
 * @version     V1.0
@@ -13,10 +13,10 @@
 using namespace std;
 
 /**
-* @brief ÖØÔØÔËËã·û-
-* @param const mytime& a£º
+* @brief é‡è½½è¿ç®—ç¬¦-
+* @param const mytime& aï¼š
          const mytime& b:
-* @return ¼ÆËã
+* @return è®¡ç®—
 * @author Duowen
 * @version v1.0
 */
@@ -25,27 +25,27 @@ dtime::dtime(int dyear,int dmonth):mytime(dyear,dmonth){
 }
 
 /**
-* @brief Êä³öÔÚÖ°Ê±¼ä
+* @brief è¾“å‡ºåœ¨èŒæ—¶é—´
 * @param void
 * @return void
 * @author Duowen
 * @version v1.0
 */
 void dtime::show(){
-    cout<<"ÒÑÈëÖ°";
-    if(year!=0) cout<<year<<"Äê";
-    if(month!=0) cout<<month<<"ÔÂ";
-    if(year!=0) cout<<",×Ü¼Æ"<<total_time<<"ÔÂ"<<endl<<endl;
+    cout<<"å·²å…¥èŒ";
+    if(year!=0) cout<<year<<"å¹´";
+    if(month!=0) cout<<month<<"æœˆ";
+    if(year!=0) cout<<",æ€»è®¡"<<total_time<<"æœˆ"<<endl<<endl;
     return;
 }
 
 
 /**
-* @brief ÖØÔØÔËËã·û-
-* @note  ¼ÆËãÔÚÖ°Ê±¼ä
-* @param const mytime& a£ºÈëÖ°Ê±¼äÊ±¼äÀàµÄÊµÀı
-* @param const mytime& b: ÀëÖ°Ê±¼äÊ±¼äÀàµÄÊµÀı
-* @return dtimeÀàÊµÀı
+* @brief é‡è½½è¿ç®—ç¬¦-
+* @note  è®¡ç®—åœ¨èŒæ—¶é—´
+* @param const mytime& aï¼šå…¥èŒæ—¶é—´æ—¶é—´ç±»çš„å®ä¾‹
+* @param const mytime& b: ç¦»èŒæ—¶é—´æ—¶é—´ç±»çš„å®ä¾‹
+* @return dtimeç±»å®ä¾‹
 * @author Duowen
 * @version v1.0
 */

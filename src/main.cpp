@@ -1,24 +1,24 @@
-/**@mainpage  ¹¤Áä¼ÆËã³ÌĞò
+/**@mainpage  å·¥é¾„è®¡ç®—ç¨‹åº
 * <table>
 * <tr><th>Project  <td>Aging-Calculator
 * <tr><th>Author   <td>Duowen
 * </table>
 
-* @section   ÏîÄ¿ÏêÏ¸ÃèÊö
-* ¸ø¶¨Á½×éÊ±¼ä£¬¼ÆËãÔÚÖ°Äê·İºÍÔÂ·İÒÔ¼°×Ü¼ÆÔÂÊıÁ¿
+* @section   é¡¹ç›®è¯¦ç»†æè¿°
+* ç»™å®šä¸¤ç»„æ—¶é—´ï¼Œè®¡ç®—åœ¨èŒå¹´ä»½å’Œæœˆä»½ä»¥åŠæ€»è®¡æœˆæ•°é‡
 *
-* @section   ¹¦ÄÜÃèÊö  
-* -# ÊäÈë¸ñÊ½¼ì²â
+* @section   åŠŸèƒ½æè¿°  
+* -# è¾“å…¥æ ¼å¼æ£€æµ‹
 * 
-* @section   ÓÃ·¨ÃèÊö 
-* -# ÈÕÆÚÒÔyyyymmµÄĞÎÊ½ÊäÈë£¬ÀıÈç202102
+* @section   ç”¨æ³•æè¿° 
+* -# æ—¥æœŸä»¥yyyymmçš„å½¢å¼è¾“å…¥ï¼Œä¾‹å¦‚202102
 * 
 **********************************************************************************
 */
 
 /**@file  main.cpp
-* @brief       ÏîÄ¿Ö÷º¯ÊıÎÄ¼ş
-* @details     mainº¯ÊıÈë¿Ú
+* @brief       é¡¹ç›®ä¸»å‡½æ•°æ–‡ä»¶
+* @details     mainå‡½æ•°å…¥å£
 * @author      Duowen
 * @date        2021-2-19
 * @version     V1.0
@@ -34,7 +34,7 @@ bool check(int,int);
 
 
 /**
-* @brief Ö÷º¯Êı
+* @brief ä¸»å‡½æ•°
 * @param void
 * @return 0
 * @author Duowen
@@ -44,7 +44,7 @@ int main(){
     string begins,ends;
     int begin,end;
     while(true){
-        cout<<"ÈëÖ°ÈÕÆÚ£º"<<endl;
+        cout<<"å…¥èŒæ—¥æœŸï¼š"<<endl;
 
         while(cin>>begins){
             begin=atoi(begins.c_str());
@@ -52,7 +52,7 @@ int main(){
                 break;
             }
         }
-        cout<<"ÀëÖ°ÈÕÆÚ£º"<<endl;
+        cout<<"ç¦»èŒæ—¥æœŸï¼š"<<endl;
         while(cin>>ends){
             end=atoi(ends.c_str());
             if(check(begin)&&check(begin,end)) break;
@@ -68,35 +68,35 @@ int main(){
 
 
 /**
-* @brief ¼ì²âÊäÈëÊ±¼äÊÇ·ñºÏ·¨
-* @param int time£ºÊı×Ö¸ñÊ½µÄÊ±¼ä
-* @return ¸ñÊ½ºÏ·¨·µ»Øtrue£¬¸ñÊ½·Ç·¨·µ»Øfalse
+* @brief æ£€æµ‹è¾“å…¥æ—¶é—´æ˜¯å¦åˆæ³•
+* @param int timeï¼šæ•°å­—æ ¼å¼çš„æ—¶é—´
+* @return æ ¼å¼åˆæ³•è¿”å›trueï¼Œæ ¼å¼éæ³•è¿”å›false
 * @author Duowen
 * @version v1.0
 */
 bool check(int time){
     if(time<=100000||time>=999912) {
-        cout<<"ÊäÈëµÄ¸ñÊ½ÓĞÎó£¬ÇëÖØĞÂÊäÈëÕıÈ·µÄ¸ñÊ½ÀıÈç202101"<<endl;
+        cout<<"è¾“å…¥çš„æ ¼å¼æœ‰è¯¯ï¼Œè¯·é‡æ–°è¾“å…¥æ­£ç¡®çš„æ ¼å¼ä¾‹å¦‚202101"<<endl;
         return false;
     }
     int year=time/100;
     int month=time%100;
     if(month<1||month>12){
-        cout<<"ÊäÈëµÄÔÂ·İÓĞÎó£¬ÇëÖØĞÂÊäÈë"<<endl;
+        cout<<"è¾“å…¥çš„æœˆä»½æœ‰è¯¯ï¼Œè¯·é‡æ–°è¾“å…¥"<<endl;
         return false;
     }
     return true;
 }
 
 /**
-* @brief ¼ì²âÀëÖ°ÈÕÆÚÊÇ·ñÍíÓÚÈëÖ°ÈÕÆÚ
-* @param int a£ºÈëÖ°ÈÕÆÚ£»int b£ºÀëÖ°ÈÕÆÚ
-* @return ÀëÖ°ÈÕÆÚ²»ÔçÓÚÓÚÈëÖ°ÈÕÆÚ·µ»Øtrue£¬·´Ö®·µ»Øfalse
+* @brief æ£€æµ‹ç¦»èŒæ—¥æœŸæ˜¯å¦æ™šäºå…¥èŒæ—¥æœŸ
+* @param int aï¼šå…¥èŒæ—¥æœŸï¼›int bï¼šç¦»èŒæ—¥æœŸ
+* @return ç¦»èŒæ—¥æœŸä¸æ—©äºäºå…¥èŒæ—¥æœŸè¿”å›trueï¼Œåä¹‹è¿”å›false
 * @author Duowen
 * @version v1.0
 */
 bool check(int a,int b){
     if(a<=b) return true;
-    cout<<"ÀëÖ°ÈÕÆÚ²»ÄÜÔçÓÚÈëÖ°ÈÕÆÚ£¬ÇëÖØĞÂÊäÈë"<<endl;
+    cout<<"ç¦»èŒæ—¥æœŸä¸èƒ½æ—©äºå…¥èŒæ—¥æœŸï¼Œè¯·é‡æ–°è¾“å…¥"<<endl;
     return false;
 }
